@@ -1,0 +1,116 @@
+/* ========== CSS RESET ========== */
+
+/* Убираем все отступы и стандартные стили браузера */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Убираем стандартные стили для списков */
+ul, ol {
+  list-style: none;
+}
+
+/* Ссылки без подчеркивания и с наследуемым цветом */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Изображения и видео масштабируются по контейнеру */
+img, picture, video, canvas {
+  display: block;
+  max-width: 100%;
+}
+
+/* Убираем аутлайн при клике по кнопке (для кастомных UI) */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Убираем перенос текста у кнопок */
+button {
+  cursor: pointer;
+}
+
+/* Устанавливаем базовые переменные и шрифты */
+:root {
+  --font-main: "Inter", "Segoe UI", Roboto, sans-serif;
+  --font-size-base: 16px;
+  --color-text: #222;
+  --color-bg: #fff;
+  --color-accent: #007aff;
+
+  --container-width: 1200px;
+  --gutter: 20px;
+}
+
+/* ========== BASE STYLES ========== */
+
+html, body {
+  height: 100%;
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Центрирование контейнера */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* Основные заголовки */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Абзацы */
+p {
+  margin-bottom: 1em;
+}
+
+/* Удобная обертка для контента */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Footer прижат к низу, если контента мало */
+main {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+}
+
+/* Класс для скрытия элементов (но доступных для скринридеров) */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+

@@ -1,6 +1,3 @@
-/* ========== CSS RESET ========== */
-
-/* Убираем все отступы и стандартные стили браузера */
 *,
 *::before,
 *::after {
@@ -9,24 +6,20 @@
   box-sizing: border-box;
 }
 
-/* Убираем стандартные стили для списков */
 ul, ol {
   list-style: none;
 }
 
-/* Ссылки без подчеркивания и с наследуемым цветом */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Изображения и видео масштабируются по контейнеру */
 img, picture, video, canvas {
   display: block;
   max-width: 100%;
 }
 
-/* Убираем аутлайн при клике по кнопке (для кастомных UI) */
 button,
 input,
 textarea,
@@ -38,24 +31,36 @@ select {
   outline: none;
 }
 
-/* Убираем перенос текста у кнопок */
 button {
   cursor: pointer;
+  height: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 40px;
+  transition: var(--transition);
+  padding: 0 24px;
 }
 
-/* Устанавливаем базовые переменные и шрифты */
 :root {
   --font-main: "Inter", "Segoe UI", Roboto, sans-serif;
   --font-size-base: 16px;
-  --color-text: #222;
+
+  --color-red: #D82D32;
+  --color-red-hover: #bb2429;
+
+  --color-blue: #104076;
+
+  --color-text: #4C5764;
   --color-bg: #fff;
-  --color-accent: #007aff;
 
-  --container-width: 1200px;
-  --gutter: 20px;
+  --color-dark-01: #3A5463;
+
+
+  --container-width: 1526px;
+  --gutter: 40px;
+  --transition: .3s ease-in-out;
 }
-
-/* ========== BASE STYLES ========== */
 
 html, body {
   height: 100%;
@@ -70,6 +75,7 @@ html, body {
 /* Центрирование контейнера */
 .container {
   max-width: var(--container-width);
+  width: 100%;
   margin: 0 auto;
   padding: 0 var(--gutter);
 }
@@ -85,13 +91,6 @@ p {
   margin-bottom: 1em;
 }
 
-/* Удобная обертка для контента */
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 /* Footer прижат к низу, если контента мало */
 main {
   flex: 1 0 auto;
@@ -99,18 +98,86 @@ main {
 footer {
   flex-shrink: 0;
 }
-
-/* Класс для скрытия элементов (но доступных для скринридеров) */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+button svg, button img {
+  margin-left: 10px;
 }
 
+
+/* Components */
+.button--basic {
+  background-color: var(--color-red);
+  text-transform: uppercase;
+}
+
+.button--basic:hover {
+  background-color: var(--color-red-hover);
+}
+
+.button--basic-bordered {
+  background-color: transparent;
+  border: 2px solid var(--color-red);
+  color: var(--color-red);
+}
+
+.button--basic-bordered:hover {
+  border: 2px solid var(--color-red-hover);
+}
+
+.button--neutral {
+  background-color: var(--color-bg);
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.button--neutral-bordered {
+  background-color: transparent;
+  border: 1px solid var(--color-dark-01);
+  color: var(--color-dark-01);
+}
+
+
+
+.title--48 {
+  font-size: 48px;
+  color: var(--color-blue);
+  line-height: 120%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title--double-42 {
+  font-size: 42px;
+  color: var(--color-blue);
+  line-height: 120%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title--double-42 span {
+  font-size: 42px;
+  color: var(--color-text);
+  line-height: 120%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.text--21 {
+  font-size: 21px;
+  color: var(--color-text);
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.text--16 {
+  font-size: 16px;
+  color: var(--color-text);
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.text--12 {
+  font-size: 12px;
+  color: var(--color-text);
+  font-weight: 400;
+  line-height: 120%;
+}

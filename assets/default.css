@@ -11,10 +11,6 @@
     min-height: 762px;
 }
 
-.hero .background .header {
-
-}
-
 .hero .background .header .container {
     display: flex;
     align-items: center;
@@ -81,12 +77,120 @@
     font-size: 16px;
     color: var(--color-text);
     margin-bottom: 16px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.hero__list-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px; /* подгонка по вертикали */
+    width: 12px;
+    height: 13px;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='13' viewBox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.25 6.49524L0 12.9904L0 0L11.25 6.49524Z' fill='%23104076'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .hero .background .container .hero__list .button--basic {
     margin-bottom: 15px;
+    width: 70%;
 }
 
-.hero .background .container .hero__list .text--12 {
+
+
+/* [BLOCK]: ADVANTAGES */
+.advantages .container .advantages__menu {
+    background-color: var(--color-blue);
+    height: 54px;
+    border-radius: 30px;
+    padding: 19px 51px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 37px 0 77px;
+}
+
+.advantages .container .advantages__menu .advantages__menu-item {
+
+}
+
+.advantages .container .advantages__menu .advantages__menu-item a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+
+.advantages {
+
+}
+
+.advantages .container:nth-child(2) {
+    display: flex;
+    align-items: flex-start;
+    gap: 90px
+}
+
+.advantages .container .left {
+    width: 60%;
+}
+
+.advantages .container .left .title--double-42 {
+    margin-bottom: 33px;
+}
+
+.advantages .container .left .title--double-42 span {
+
+}
+
+.advantages .container .left .advantages__list {
+
+}
+
+.advantages .container .left .advantages__list .advantages__list-item {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 12px;
+}
+
+.advantages__list-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px; /* подгонка по вертикали */
+    width: 19px;
+    height: 19px;
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='19' height='19' rx='9.5' fill='%23104076'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.advantages .container .left .advantages__list .advantages__list-item .text--24 {
+
+}
+
+.advantages .container .left .advantages__list .advantages__list-item .text--16 {
+    max-width: 308px;
+    display: block;
+}
+
+.advantages .container .left .advantages__actions {
+
+}
+
+.advantages .container .left .advantages__actions .button--basic {
+
+}
+
+.advantages .container .right {
+    width: 40%;
+}
+
+.advantages .container .right img {
 
 }

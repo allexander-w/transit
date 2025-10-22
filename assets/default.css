@@ -1,0 +1,92 @@
+.hero {
+    padding: 29px 42px;
+}
+
+.hero .background {
+    overflow: hidden;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 58px);
+    min-height: 762px;
+}
+
+.hero .background .header {
+
+}
+
+.hero .background .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .background .header .container .header__menu {
+    background-color: var(--color-body);
+    padding: 28px 42px;
+    border-radius: 0 0 40px 40px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.hero .background .header .container .header__menu .header__menu-social {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.hero .background .header .container .header__menu .header__menu-actions .button--basic-bordered {
+    margin-right: 24px;
+}
+
+.hero .background .header .container .header__menu .header__burger {
+
+}
+
+.hero .background .header .container .header__menu .header__burger .burger {
+
+}
+
+.hero .background .container:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero .background .container .title--48 {
+    max-width: 680px;
+    margin-bottom: 9px;
+}
+
+.hero .background .container .text--21 {
+    margin-bottom: 20px;
+    max-width: 506px;
+}
+
+.hero .background .container .hero__list {
+    background-color: rgba(255,255,255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 27px 31px;
+    max-width: 467px;
+}
+
+.hero .background .container .hero__list .hero__list-wrapper {
+    margin-bottom: 27px;
+}
+
+.hero .background .container .hero__list .hero__list-wrapper .hero__list-item {
+    font-size: 16px;
+    color: var(--color-text);
+    margin-bottom: 16px;
+}
+
+.hero .background .container .hero__list .button--basic {
+    margin-bottom: 15px;
+}
+
+.hero .background .container .hero__list .text--12 {
+
+}

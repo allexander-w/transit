@@ -31,6 +31,11 @@ select {
   outline: none;
 }
 
+input {
+  padding: 14px 24px;
+  border-radius: 5px;
+}
+
 button {
   cursor: pointer;
   height: 44px;
@@ -53,8 +58,11 @@ button {
 
   --color-text: #4C5764;
   --color-bg: #fff;
+  --color-body: #F0F0F0;
 
   --color-dark-01: #3A5463;
+  --color-dark-02: #CCCCCC;
+  --color-dark-03: #808080;
 
 
   --container-width: 1526px;
@@ -63,13 +71,16 @@ button {
 }
 
 html, body {
-  height: 100%;
   font-family: var(--font-main);
   font-size: var(--font-size-base);
   line-height: 1.5;
   color: var(--color-text);
   background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--color-body);
 }
 
 /* Центрирование контейнера */
@@ -88,7 +99,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Абзацы */
 p {
-  margin-bottom: 1em;
 }
 
 /* Footer прижат к низу, если контента мало */
@@ -161,6 +171,36 @@ button svg, button img {
   text-transform: uppercase;
 }
 
+.title--36 {
+  font-size: 36px;
+  color: var(--color-blue);
+  line-height: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title--30 {
+  font-size: 30px;
+  color: var(--color-blue);
+  line-height: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text--32 {
+  font-size: 32px;
+  color: var(--color-text);
+  font-weight: 800;
+  line-height: 100%;
+}
+
+.text--24 {
+  font-size: 24px;
+  color: var(--color-text);
+  font-weight: 700;
+  line-height: 46px;
+}
+
 .text--21 {
   font-size: 21px;
   color: var(--color-text);
@@ -180,4 +220,26 @@ button svg, button img {
   color: var(--color-text);
   font-weight: 400;
   line-height: 120%;
+}
+
+.input--bordered {
+  border: 1px solid var(--color-dark-02);
+  height: 47px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 700;
+  color: var(--color-dark-03);
+}
+
+.input--solid {
+  background-color: #fff;
+  border-radius: 40px;
+  height: 46px;
+}
+
+.input--solid::placeholder {
+  font-size: 16px;
 }

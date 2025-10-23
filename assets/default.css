@@ -180,7 +180,9 @@
 }
 
 .advantages .container .left .advantages__actions {
-
+    margin-top: 48px;
+    display: flex;
+    gap: 22px;
 }
 
 .advantages .container .left .advantages__actions .button--basic {
@@ -192,5 +194,288 @@
 }
 
 .advantages .container .right img {
+
+}
+
+.advantages__items {
+    margin-top: 127px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.advantages__items .advantages__item {
+    width: 25%;
+    padding: 16px 0;
+}
+
+.advantages__items .advantages__item:not(:last-child) {
+    border-right: 2px solid var(--color-blue);
+    margin-right: 40px;
+    padding-right: 40px;
+}
+
+.advantages__items .advantages__item .text--24 {
+    color: var(--color-blue);
+    margin-bottom: 16px;
+    line-height: 100%;
+}
+
+.advantages__items .advantages__item .text--16 {
+    line-height: 100%;
+    font-weight: 400;
+    color: var(--color-dark-04);
+}
+
+
+
+/* [BLOCK]: EXPORT */
+.export {
+    margin-bottom: 106px;
+}
+
+.export .container {
+    display: flex;
+    gap: 24px;
+}
+
+.export .container .left {
+    width: 41%;
+}
+
+.export .container .left img {
+
+}
+
+.export .container .right {
+    width: 59%;
+}
+
+.export .container .right .title--36 {
+    margin-bottom: 26px;
+}
+
+.export .container .right .text--24 {
+    line-height: 36px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.export .container .right .text--24.subtitle {
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.export .container .right .export__list .export__list-item {
+    font-size: 16px;
+    color: var(--color-text);
+    margin-bottom: 16px;
+}
+
+
+/* [BLOCK]: CALC */
+.calculator {
+    margin-bottom: 136px;
+}
+
+.calculator .container .title--double-42 {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.calculator .container form .calculator__top {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+    margin-bottom: 62px;
+}
+
+.calculator .container form .calculator__top .calculator__form-item {
+    width: 33%;
+}
+
+.calculator .container form .calculator__bottom {
+    display: flex;
+    gap: 60px;
+}
+
+.calculator .container form .calculator__bottom .calculator__left {
+    width: 50%;
+}
+
+.calculator__right label, .calculator__form-item label {
+    color: var(--color-blue);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 17px;
+    display: block;
+}
+
+.calculator .container form .calculator__bottom .calculator__left .calculator__form-item .calculator__left-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 31px 13px;
+}
+
+.calculator .container form .calculator__bottom .calculator__right {
+    width: 50%;
+}
+
+.calculator .container form .calculator__bottom .calculator__right .calculator__right-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 31px
+}
+
+.calculator .container form .calculator__bottom .calculator__right .text--14 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* [BLOCK]: SERVICES */
+.services {
+    margin-bottom: 128px;
+}
+
+.services .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.services .container .services__item {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.services .container .services__item .title--30 {
+    margin-bottom: 33px;
+
+}
+
+.services .container .services__item .subtitle {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.services .container .services__item ul {
+    margin-bottom: 32px;
+}
+
+.services .container .services__item ul li {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: var(--color-text);
+    position: relative;
+    padding-left: 24px;
+}
+
+.services .container .services__item ul li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px; /* подгонка по вертикали */
+    width: 12px;
+    height: 13px;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='13' viewBox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.25 6.49524L0 12.9904L0 0L11.25 6.49524Z' fill='%23D82D32'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.services .container .services__item .button--basic {
+
+}
+
+.services .container .services__item .image {
+
+}
+
+.services .container .services__item .image img {
+
+}
+
+
+/* [BLOCK]: TYPES */
+.delivery-types {
+    margin-bottom: 128px;
+}
+
+.delivery-types .container {
+
+}
+
+.delivery-types .container .title--double-42 {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.delivery-types .container .text--24 {
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.delivery-types .container .delivery-types__list {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.delivery-types .container .delivery-types__list .delivery-types__list-item {
+    height: 100%;
+    background-color: var(--color-blue);
+    padding: 40px;
+}
+
+.delivery-types .container .delivery-types__list .delivery-types__list-item img {
+    width: 100px;
+    height: 110px;
+}
+
+.delivery-types .container .delivery-types__list .delivery-types__list-item .title--32 {
+
+}
+
+.delivery-types .container .delivery-types__list .delivery-types__list-item .delivery-types__list-item--prop {
+
+}
+
+.delivery-types .container .delivery-types__list .delivery-types__list-item .delivery-types__list-item--prop img {
+
+}
+
+.delivery-types .container .delivery-types__list .delivery-types__list-item .delivery-types__list-item--prop .text--21 {
+
+}
+
+.delivery-types .container .delivery-types__list .delivery-types__list-item .button--neutral {
+
+}
+
+.delivery-types .container .delivery-types__list .delivery-types__list-item .button--neutral svg {
+    width: 10px;
+}
+
+.delivery-types .container .delivery-types__way {
+
+}
+
+.delivery-types .container .delivery-types__way .title--32 {
+
+}
+
+.delivery-types .container .delivery-types__way .delivery-types__way-form {
+
+}
+
+.delivery-types .container .delivery-types__way .delivery-types__way-form .input--solid {
+
+}
+
+.delivery-types .container .delivery-types__way .delivery-types__way-form .button--basic {
 
 }

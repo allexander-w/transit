@@ -45,6 +45,9 @@ button {
   border-radius: 40px;
   transition: var(--transition);
   padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 :root {
@@ -55,6 +58,7 @@ button {
   --color-red-hover: #bb2429;
 
   --color-blue: #104076;
+  --color-light-blue: #98B8DC;
 
   --color-text: #4C5764;
   --color-bg: #fff;
@@ -64,6 +68,7 @@ button {
   --color-dark-02: #CCCCCC;
   --color-dark-03: #808080;
   --color-dark-04: #7E838E;
+  --color-dark-05: #9CA9B0;
 
 
   --container-width: 1526px;
@@ -120,6 +125,12 @@ button svg, button img {
   text-transform: uppercase;
 }
 
+.button--basic-blue {
+  background-color: var(--color-blue);
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .button--basic:hover {
   background-color: var(--color-red-hover);
 }
@@ -172,12 +183,27 @@ button svg, button img {
   text-transform: uppercase;
 }
 
+.title--40 {
+  font-size: 40px;
+  color: var(--color-blue);
+  line-height: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .title--36 {
   font-size: 36px;
   color: var(--color-blue);
   line-height: 42px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.title--32 {
+  font-size: 32px;
+  color: #fff;
+  line-height: 100%;
+  font-weight: 800;
 }
 
 .title--30 {

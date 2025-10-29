@@ -136,7 +136,9 @@ button {
 
   --color-blue: #104076;
   --color-light-blue: #98B8DC;
+  --color-light-blue-02: #49AAD1;
   --color-dark-blue: #76A4BA;
+  --color-dark-blue-02: #003B64;
 
   --color-text: #4C5764;
   --color-bg: #fff;
@@ -246,7 +248,7 @@ button svg, button img {
   text-transform: uppercase;
 }
 
-.title--double-42 {
+.title--double-42, .title--double-36 {
   font-size: 42px;
   color: var(--color-blue);
   line-height: 120%;
@@ -254,12 +256,17 @@ button svg, button img {
   text-transform: uppercase;
 }
 
-.title--double-42 span {
+.title--double-42 span, .title--double-36 span {
   font-size: 42px;
   color: var(--color-text);
   line-height: 120%;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.title--double-36, .title--double-36 span  {
+  font-size: 36px;
+  line-height: 120%;
 }
 
 .title--40 {

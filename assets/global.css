@@ -137,8 +137,10 @@ button {
   --color-blue: #104076;
   --color-light-blue: #98B8DC;
   --color-light-blue-02: #49AAD1;
+  --color-light-blue-03: #A7DCF8;
   --color-dark-blue: #76A4BA;
   --color-dark-blue-02: #003B64;
+  --color-dark-blue-03: #367A9B;
 
   --color-text: #4C5764;
   --color-bg: #fff;
@@ -150,6 +152,7 @@ button {
   --color-dark-04: #7E838E;
   --color-dark-05: #9CA9B0;
   --color-dark-06: #E2E6E8;
+  --color-dark-07: #D9D9D9;
 
 
   --container-width: 1526px;

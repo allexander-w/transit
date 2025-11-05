@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Транзит</title>
+
+    <link rel="stylesheet" href="../assets/global.css">
+    <link rel="stylesheet" href="../assets/default.css">
+
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+<header class="header header--light">
+    <div class="container">
+
+        <a href="#" class="header__logo">
+            <img src="../assets/images/logo.svg" alt="">
+        </a>
+
+        <div class="header__menu">
+            <div class="header__menu-social">
+                <a href="#"><img src="../assets/images/social/wh.svg" alt=""></a>
+                <a href="#"><img src="../assets/images/social/tg.svg" alt=""></a>
+                <a href="#"><img src="../assets/images/social/vk.svg" alt=""></a>
+            </div>
+
+            <div class="header__menu-actions">
+                <button class="button--basic-bordered">Написать в чат</button>
+                <button class="button--basic">Заказать звонок</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="menu">
+        <div class="container">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">о компании</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">полезная информация</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">тарифы</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<section class="contacts-section">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Доставка из Китая</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Сборные грузы из китая</a></li>
+        </ul>
+
+        <div class="contacts-section__content">
+            <iframe
+                    class="contacts-section__map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.4856847089787!2d37.52638731592652!3d55.74526998055447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bcee7a89e07%3A0x6c8f0f3b0b0b0b0b!2z0YPQuy4g0JLQuNC60YLQvtGA0LXQvdC60L4sIDksINGB0YLRgNC-0LXQvdC40LUgMSwg0JzQvtGB0LrQstCwLCAxMjUxNjc!5e0!3m2!1sru!2skz!4v1635000000000!5m2!1sru!2skz"
+                    allowfullscreen=""
+                    loading="lazy">
+            </iframe>
+
+            <div class="contacts-section__info">
+                <div class="office-card office-card--expanded">
+                    <div class="office-card__header" onclick="toggleOffice(this)">
+                        <h2 class="office-card__title">Россия, Москва Главный офис</h2>
+                        <span class="office-card__toggle">+</span>
+                    </div>
+                    <div class="office-card__content">
+                        <div class="office-card__detail">
+                            <div class="office-card__icon">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_77_1576)">
+                                        <path d="M17.6449 0.0681098C17.4637 -0.0227033 17.2502 -0.0227033 17.069 0.0681098L0.355273 8.42498C0.0377848 8.58389 -0.0907696 8.97005 0.0681061 9.28753C0.158542 9.46826 0.328718 9.59594 0.52752 9.63222L7.16094 10.8388L8.36753 17.4722C8.41691 17.7441 8.63463 17.9541 8.90816 17.9936C8.9384 17.9979 8.96891 18.0001 8.99942 18C9.24308 18.0001 9.46584 17.8625 9.57477 17.6445L17.9317 0.930777C18.0907 0.613365 17.9623 0.227136 17.6449 0.0681098Z" fill="#4C5764"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_77_1576">
+                                            <rect width="18" height="18" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="office-card__text">
+                                125167 БЦ Прайм Тайм, ул. Викторенко, 9 строение 1, 1 этаж
+                            </div>
+                        </div>
+
+                        <div class="office-card__detail">
+                            <div class="office-card__icon">
+                                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.88324 0H1.30989C0.585088 0 0 0.587712 0 1.3112V16.6901C0 17.4129 0.585088 18 1.30989 18H8.88324C9.60673 18 10.1931 17.4129 10.1931 16.6901V1.3112C10.1931 0.587712 9.60673 0 8.88324 0ZM3.22783 0.796298H6.96662C7.06107 0.796298 7.13782 0.937322 7.13782 1.1118C7.13782 1.28628 7.06107 1.42796 6.96662 1.42796H3.22783C3.13272 1.42796 3.05728 1.28628 3.05728 1.1118C3.05728 0.937322 3.13272 0.796298 3.22783 0.796298ZM5.09722 16.7059C4.63611 16.7059 4.26091 16.3307 4.26091 15.8689C4.26091 15.4071 4.63611 15.0332 5.09722 15.0332C5.55703 15.0332 5.93222 15.4071 5.93222 15.8689C5.93222 16.3307 5.55703 16.7059 5.09722 16.7059ZM9.21187 13.8401H0.981925V2.21245H9.21187V13.8401Z" fill="#4C5764"/>
+                                </svg>
+                            </div>
+                            <div class="office-card__text">
+                                <a href="tel:88006002346" class="office-card__link">8 (800) 600-23-46</a>
+                            </div>
+                        </div>
+
+                        <div class="office-card__detail">
+                            <div class="office-card__icon">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_77_1573)">
+                                        <path d="M16.3125 2.25H1.68751C0.756961 2.25 0 3.00696 0 3.93751V14.0625C0 14.9931 0.756961 15.75 1.68751 15.75H16.3125C17.243 15.75 18 14.9931 18 14.0625V3.93751C18 3.00696 17.243 2.25 16.3125 2.25ZM16.3125 3.375C16.3889 3.375 16.4616 3.39085 16.5281 3.41854L9 9.94319L1.47188 3.41854C1.53834 3.39089 1.61105 3.375 1.68747 3.375H16.3125ZM16.3125 14.625H1.68751C1.37715 14.625 1.125 14.3729 1.125 14.0625V4.60711L8.6314 11.1127C8.73743 11.2044 8.86872 11.25 9 11.25C9.13128 11.25 9.26257 11.2044 9.3686 11.1127L16.875 4.60711V14.0625C16.875 14.3729 16.6228 14.625 16.3125 14.625Z" fill="#4C5764"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_77_1573">
+                                            <rect width="18" height="18" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="office-card__text">
+                                <a href="mailto:zakaz@transitgroup.ru" class="office-card__link">zakaz@transitgroup.ru</a>
+                            </div>
+                        </div>
+
+                        <div class="office-card__detail">
+                            <div class="office-card__icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                                </svg>
+                            </div>
+                            <div class="office-card__text">
+                                ПН-ПТ: 09:00 - 19:00  |  СБ: 10:00 - 16:00  |  ВС: выходной
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="office-card">
+                    <div class="office-card__header" onclick="toggleOffice(this)">
+                        <h2 class="office-card__title">Россия, Москва офис</h2>
+                        <span class="office-card__toggle">+</span>
+                    </div>
+                    <div class="office-card__content">
+                        <div class="office-card__text">Информация об офисе</div>
+                    </div>
+                </div>
+
+                <div class="office-card">
+                    <div class="office-card__header" onclick="toggleOffice(this)">
+                        <h2 class="office-card__title">Кыргызстан, Бишкек</h2>
+                        <span class="office-card__toggle">+</span>
+                    </div>
+                    <div class="office-card__content">
+                        <div class="office-card__text">Информация об офисе</div>
+                    </div>
+                </div>
+
+                <div class="office-card">
+                    <div class="office-card__header" onclick="toggleOffice(this)">
+                        <h2 class="office-card__title">Китай, Гуанчжоу</h2>
+                        <span class="office-card__toggle">+</span>
+                    </div>
+                    <div class="office-card__content">
+                        <div class="office-card__text">Информация об офисе</div>
+                    </div>
+                </div>
+
+                <div class="office-card">
+                    <div class="office-card__header" onclick="toggleOffice(this)">
+                        <h2 class="office-card__title">Китай, Иу</h2>
+                        <span class="office-card__toggle">+</span>
+                    </div>
+                    <div class="office-card__content">
+                        <div class="office-card__text">Информация об офисе</div>
+                    </div>
+                </div>
+
+                <div class="office-card">
+                    <div class="office-card__header" onclick="toggleOffice(this)">
+                        <h2 class="office-card__title">Турция, Стамбул</h2>
+                        <span class="office-card__toggle">+</span>
+                    </div>
+                    <div class="office-card__content">
+                        <div class="office-card__text">Информация об офисе</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="blue-form">
+    <div class="container">
+
+        <form action="#" class="blue-form__wrapper">
+
+            <h2 class="blue-form__title"><span>Готовы <br> отправить</span> <br> груз?</h2>
+
+            <div class="blue-form__inputs">
+                <input type="text" placeholder="Ваше имя" class="input--bordered">
+                <input type="text" placeholder="Ваш телефон" class="input--bordered">
+                <input type="text" placeholder="Ваш e-mail" class="input--bordered">
+
+                <button class="button--neutral">Заказать расчет</button>
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+<!-- [BLOCK]: FOOTER -->
+<footer class="footer">
+    <div class="container">
+
+        <span class="line"></span>
+
+
+        <div class="footer__wrapper">
+
+            <div class="footer__block">
+                <img src="../assets/images/logo.svg" alt="" class="logo">
+                <div class="footer__block-item">
+                    <img src="../assets/images/icons/navigation.svg" alt="">
+                    <p>125167 БЦ Прайм Тайм, ул. Викторенко, 9 строение 1, 1 этаж</p>
+                </div>
+
+                <div class="footer__block-item">
+                    <img src="../assets/images/icons/phone.svg" alt="">
+                    <a href="tel:8 800 600 23 46">8 800 600 23 46</a>
+                </div>
+
+                <div class="footer__block-item">
+                    <img src="../assets/images/icons/mail.svg" alt="">
+                    <a href="mailto:zakaz@transitgroup.ru">zakaz@transitgroup.ru</a>
+                </div>
+
+                <div class="footer__block-social">
+                    <a href="#"><img src="../assets/images/social/wh.svg" alt=""></a>
+                    <a href="#"><img src="../assets/images/social/tg.svg" alt=""></a>
+                    <a href="#"><img src="../assets/images/social/vk.svg" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="footer__block">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Полезная информация</a></li>
+                    <li><a href="#">Документы</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__block">
+                <ul>
+                    <li><a href="#">Автоперевозки</a></li>
+                    <li><a href="#">Авиаперевозки</a></li>
+                    <li><a href="#">ЖД перевозки</a></li>
+                    <li><a href="#">Таможенное оформление</a></li>
+                    <li><a href="#">Мультимодальные решения</a></li>
+                    <li><a href="#">Генеральные грузы</a></li>
+                    <li><a href="#">Сертификация</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__block footer__block-contacts">
+                <a class="footer__block-phone" href="tel: 8 (800) 600 23 46">8 (800) 600 23 46</a>
+                <p>Бесплатный по России</p>
+                <a class="footer__block-mail" href="mailto:zakaz@transitgroup.ru">zakaz@transitgroup.ru</a>
+
+                <div class="footer__block-buttons">
+                    <button class="button--basic">ЗАКАЗАТЬ ЗВОНОК</button>
+                    <button class="button--neutral-bordered">НАПИСАТЬ В ЧАТ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container footer__under">
+        <p>Транзит Групп © 2010-2025 Все права защищены</p>
+        <p>Согласие на обработку персональных данных <a href="/">Карта сайта</a></p>
+    </div>
+</footer>
+
+
+<script>
+    function toggleOffice(header) {
+        const card = header.parentElement;
+        card.classList.toggle('office-card--expanded');
+    }
+</script>
+
+</body>
+</html>

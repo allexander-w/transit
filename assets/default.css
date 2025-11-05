@@ -4093,3 +4093,280 @@ span.line {
         margin: 20px auto;
     }
 }
+
+.customs-documents {
+}
+
+.customs-documents .title--double-42 {
+    margin-bottom: 46px;
+}
+
+.customs-documents__main {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.customs-documents__subtitle {
+    color: var(--color-text);
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+}
+.customs-documents__card {
+    flex: 1;
+    border: 2px solid var(--color-blue);
+    border-radius: 20px;
+    padding: 25px 28px;
+}
+
+.customs-documents__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 40px;
+    list-style: none;
+}
+
+.customs-documents__list-item {
+    color: var(--color-text);
+    position: relative;
+    padding-left: 15px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.customs-documents__list-item:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #1a4d8f;
+    font-weight: bold;
+}
+
+.customs-documents__image-wrapper {
+    width: 200px;
+    height: 250px;
+    flex-shrink: 0;
+}
+
+.customs-documents__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.customs-documents__notice {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.customs-documents__notice-label {
+    color: #D82D32;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.customs-documents__notice-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: var(--color-text);
+}
+
+.customs-documents__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 60px;
+}
+
+.customs-documents__info-block {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.customs-documents__info-image-wrapper {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+}
+
+.customs-documents__info-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.customs-documents__info-content {
+    flex: 1;
+}
+
+.customs-documents__info-title {
+    color: var(--color-blue);
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    text-transform: uppercase;
+
+}
+
+.customs-documents__info-list {
+    list-style: none;
+}
+
+.customs-documents__info-item {
+    color: var(--color-text);
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 15px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.customs-documents__info-item:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #1a4d8f;
+    font-weight: bold;
+}
+
+.customs-documents__info-item:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.contacts-section {
+    padding-top: 60px;
+    margin-bottom: 60px;
+}
+
+.contacts-section .breadcrumbs {
+    margin-bottom: 40px;
+}
+
+.contacts-section__content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 64px;
+}
+
+.contacts-section__map {
+    width: 100%;
+    height: 553px;
+    border: none;
+    border-radius: 20px;
+}
+
+.contacts-section__info {
+    padding: 40px 0;
+}
+
+.office-card {
+    padding-bottom: 12px;
+}
+
+.office-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.office-card__title {
+    color: var(--color-blue);
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.office-card__toggle {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #003d7a;
+    transition: transform 0.3s;
+}
+
+.office-card--expanded .office-card__toggle {
+    transform: rotate(45deg);
+}
+
+.office-card--expanded .office-card__header {
+    border-bottom: none;
+}
+
+.office-card__content {
+    display: none;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.office-card--expanded .office-card__content {
+    display: block;
+}
+
+.office-card__detail {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.office-card__icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.office-card__icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #666;
+}
+
+.office-card__text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.office-card__link {
+    color: #003d7a;
+    text-decoration: none;
+}
+
+.office-card__link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 968px) {
+    .contacts-section__content {
+        grid-template-columns: 1fr;
+    }
+
+    .contacts-section__map {
+        height: 400px;
+    }
+
+    .contacts-section__info {
+        padding: 20px;
+    }
+}

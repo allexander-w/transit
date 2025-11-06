@@ -4372,3 +4372,35 @@ span.line {
         padding: 20px;
     }
 }
+
+.marketplaces-section {
+    margin-bottom: 105px;
+}
+
+.marketplaces-section h2 {
+    margin-bottom: 37px;
+}
+
+.marketplaces-section__info p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-text);
+    margin-bottom: 12px;
+}
+
+.marketplaces-section__info h3 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--color-dark-blue);
+}
+
+.marketplaces-section__info h3 span {
+    color: var(--color-blue);
+}
+
+.delivery-page {
+    margin-top: 60px;
+    margin-bottom: 88px;
+}

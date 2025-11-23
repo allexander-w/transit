@@ -454,3 +454,80 @@ select::-ms-expand {
   font-size: 32px;
   margin-bottom: 24px;
 }
+
+
+
+@media screen and (max-width: 1230px) {
+  button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  button {
+    font-size: 14px;
+    min-height: 30px;
+    height: auto;
+  }
+
+  .title--48 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .title--40 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .title--double-42, .title--double-36 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .title--double-42 span, .title--double-36 span {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .text--21 {
+    font-size: 14px;
+  }
+
+  .text--12 {
+    font-size: 10px;
+  }
+
+  .text--24 {
+    font-size: 20px;
+  }
+
+  .text--16 {
+    font-size: 14px;
+  }
+
+  .text--32 {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .title--36 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .title--32 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .title--30 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+}

@@ -3,6 +3,17 @@ const sliderConfigs = [
         cl: ".cases__slider",
         config: {
             spaceBetween: 56,
+            slidesPerView: 1,
+
+            breakpoints: {
+                340: {
+                    slidesPerView: 1.1,
+                    spaceBetween: 12,
+                },
+                768: {
+                    slidesPerView: 1,
+                },
+            },
         }
     },
     {
@@ -13,6 +24,16 @@ const sliderConfigs = [
             navigation: {
                 nextEl: '.trust-button-next',
                 prevEl: '.trust-button-prev',
+            },
+
+            breakpoints: {
+                340: {
+                    slidesPerView: 1.1,
+                    spaceBetween: 12,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
             },
         }
     },

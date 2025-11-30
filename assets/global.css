@@ -134,13 +134,14 @@ button {
   --color-red: #D82D32;
   --color-red-hover: #bb2429;
 
-  --color-blue: #104076;
+  --color-blue: #17385E;
   --color-light-blue: #98B8DC;
   --color-light-blue-02: #49AAD1;
   --color-light-blue-03: #A7DCF8;
   --color-dark-blue: #76A4BA;
   --color-dark-blue-02: #003B64;
   --color-dark-blue-03: #367A9B;
+  --color-main-gray: #F6F8FC;
 
   --color-text: #4C5764;
   --color-bg: #fff;
@@ -171,7 +172,6 @@ html, body {
 }
 
 body {
-  background-color: var(--color-body);
 }
 
 /* Центрирование контейнера */
@@ -464,7 +464,41 @@ select::-ms-expand {
 }
 
 @media screen and (max-width: 768px) {
+  .article__content h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .article__content h2 {
+    font-size: 21px;
+    margin-bottom: 24px;
+  }
+
+  .article__content h3 {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .article__content h4 {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .article__content ul li {
+    font-size: 16px;
+  }
+
+  .article__content p {
+    font-size: 16px;
+  }
+
+
+
   .container {
+    padding: 0 20px;
+  }
+
+  .blog-container {
     padding: 0 20px;
   }
 
@@ -528,6 +562,10 @@ select::-ms-expand {
   .title--30 {
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  .text--20 {
+    font-size: 16px;
   }
 
 }

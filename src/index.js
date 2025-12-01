@@ -60,3 +60,19 @@ const registerSliders = () => {
 }
 
 registerSliders();
+
+
+
+
+
+const menuSectionTitles = document.querySelectorAll('.menu-section-title.has-dropdown');
+
+menuSectionTitles.forEach(title => {
+    title.addEventListener('click', () => {
+        const sectionId = title.getAttribute('data-section');
+        const dropdown = document.getElementById(sectionId);
+
+        title.classList.toggle('active');
+        dropdown.classList.toggle('active');
+    });
+});

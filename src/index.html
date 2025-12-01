@@ -20,6 +20,127 @@
 </head>
 <body>
 
+<div class="menu-overlay modal" id="sidebar">
+  <div class="modal-content">
+
+      <div class="header">
+        <div class="logo">
+          <img src="../assets/images/logo.svg" alt="">
+        </div>
+        <button class="burger-btn active" data-close>
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="1.86535" y1="1.06043" x2="20.8653" y2="20.0604" stroke="#17385E" stroke-width="3"/>
+            <line x1="1.06434" y1="20.3847" x2="20.0643" y2="1.38465" stroke="#17385E" stroke-width="3"/>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-content">
+        <div class="menu-section">
+          <div class="menu-section-title has-dropdown" data-section="delivery">
+            ДОСТАВКА
+          </div>
+          <div class="menu-dropdown" id="delivery">
+            <div class="menu-item">Доставка сборных грузов из Китая в Россию</div>
+            <div class="menu-item">Морские грузоперевозки</div>
+            <div class="menu-item">Авиадоставка грузов из Китая</div>
+            <div class="menu-item">Быстрая доставка в Россию из Китая</div>
+            <div class="menu-item">Контейнерные перевозки грузов из Китая в Россию</div>
+            <div class="menu-item">мультимодальные перевозки грузов из Китая в Россию</div>
+            <div class="menu-item">международные автоперевозки перевозки грузов из Китая в Россию</div>
+            <div class="menu-item">ЖД перевозки в Россию из Китая</div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="menu-section-title has-dropdown" data-section="services">
+            ДОП-УСЛУГИ
+          </div>
+
+          <div class="menu-dropdown" id="services">
+            <div class="menu-item">Доставка сборных грузов из Китая в Россию</div>
+            <div class="menu-item">Морские грузоперевозки</div>
+            <div class="menu-item">Авиадоставка грузов из Китая</div>
+            <div class="menu-item">Быстрая доставка в Россию из Китая</div>
+            <div class="menu-item">Контейнерные перевозки грузов из Китая в Россию</div>
+            <div class="menu-item">мультимодальные перевозки грузов из Китая в Россию</div>
+            <div class="menu-item">международные автоперевозки перевозки грузов из Китая в Россию</div>
+            <div class="menu-item">ЖД перевозки в Россию из Китая</div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="menu-section-title has-dropdown" data-section="customs">
+            ТАМОЖЕННОЕ ОФОРМЛЕНИЕ
+          </div>
+          <div class="menu-dropdown" id="customs">
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+  <div class="modal" id="services-modal">
+    <div class="modal-content">
+
+      <div class="modal-close" data-close>
+        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="1.36242" y1="1.06043" x2="27.5432" y2="27.2412" stroke="#17385E" stroke-width="3"/>
+          <line x1="1.06043" y1="27.6893" x2="27.2412" y2="1.50858" stroke="#17385E" stroke-width="3"/>
+        </svg>
+      </div>
+
+      <div class="mega-menu index-menu">
+
+        <div class="mega-menu-content">
+          <div>
+            <h1 class="services-title">УСЛУГИ</h1>
+          </div>
+
+          <div class="services-grid">
+            <div class="service-section">
+              <h2>ДОСТАВКА</h2>
+              <ul>
+                <li><a href="#">Доставка сборных грузов из Китая в Россию</a></li>
+                <li><a href="#">Морские грузоперевозки</a></li>
+                <li><a href="#">Авиадоставка грузов из Китая</a></li>
+                <li><a href="#">Быстрая доставка в Россию из Китая</a></li>
+                <li><a href="#">Контейнерные перевозки грузов из Китая в Россию</a></li>
+                <li><a href="#">мультимодальные перевозки грузов из Китая в Россию</a></li>
+                <li><a href="#">международные автоперевозки перевозки грузов из Китая в Россию</a></li>
+                <li><a href="#">ЖД перевозки в Россию из Китая</a></li>
+              </ul>
+            </div>
+
+            <div class="service-section">
+              <h2>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
+              <ul>
+                <li><a href="#">Таможенное оформление</a></li>
+                <li><a href="#">Страхование</a></li>
+                <li><a href="#">Перевод денег поставщику</a></li>
+                <li><a href="#">Складское хранение</a></li>
+                <li><a href="#">Сертификация товаров</a></li>
+                <li><a href="#">Упаковка груза</a></li>
+                <li><a href="#">Проверка поставщиков</a></li>
+              </ul>
+            </div>
+
+            <div class="service-section">
+              <h2>ТАМОЖЕННОЕ ОФОРМЛЕНИЕ</h2>
+              <ul>
+                <li><a href="#">таможенное оформление</a></li>
+                <li><a href="#">место доставки товаров</a></li>
+                <li><a href="#">решение фтс</a></li>
+                <li><a href="#">декларирование</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 
   <!-- [BLOCK]: HERO -->
   <section class="hero">
@@ -46,12 +167,16 @@
             </div>
 
             <div class="header__burger burger">
-              <div class="burger__button">
+              <div class="burger__button" data-modal="services-modal">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+              </div>
 
+              <div class="burger__button mobile" data-modal="sidebar">
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
-
               </div>
             </div>
           </div>
@@ -1084,5 +1209,6 @@
 
 
   <script src="index.js"></script>
+  <script src="modals.js"></script>
 </body>
 </html>

@@ -20,6 +20,54 @@
 </head>
 <body>
 
+<div class="backdrop" id="backdrop"></div>
+<div class="menu-overlay" id="menuOverlay">
+    <div class="header">
+        <div class="logo">
+            <img src="../assets/images/logo.svg" alt="">
+        </div>
+        <button class="burger-btn active" id="closeBurgerBtn">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.86535" y1="1.06043" x2="20.8653" y2="20.0604" stroke="#17385E" stroke-width="3"/>
+                <line x1="1.06434" y1="20.3847" x2="20.0643" y2="1.38465" stroke="#17385E" stroke-width="3"/>
+            </svg>
+        </button>
+    </div>
+    <div class="menu-content">
+        <div class="menu-section">
+            <div class="menu-section-title has-dropdown" data-section="delivery">
+                ДОСТАВКА
+            </div>
+            <div class="menu-dropdown" id="delivery">
+                <div class="menu-item">Доставка сборных грузов из Китая в Россию</div>
+                <div class="menu-item">Морские грузоперевозки</div>
+                <div class="menu-item">Авиадоставка грузов из Китая</div>
+                <div class="menu-item">Быстрая доставка в Россию из Китая</div>
+                <div class="menu-item">Контейнерные перевозки грузов из Китая в Россию</div>
+                <div class="menu-item">мультимодальные перевозки грузов из Китая в Россию</div>
+                <div class="menu-item">международные автоперевозки перевозки грузов из Китая в Россию</div>
+                <div class="menu-item">ЖД перевозки в Россию из Китая</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-section-title has-dropdown" data-section="services">
+                ДОП-УСЛУГИ
+            </div>
+            <div class="menu-dropdown" id="services">
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-section-title has-dropdown" data-section="customs">
+                ТАМОЖЕННОЕ ОФОРМЛЕНИЕ
+            </div>
+            <div class="menu-dropdown" id="customs">
+            </div>
+        </div>
+    </div>
+</div>
+
 <header class="header header--light">
     <div class="container">
 
@@ -38,6 +86,12 @@
                 <button class="button--basic-bordered">Написать в чат</button>
                 <button class="button--basic">Заказать звонок</button>
             </div>
+
+            <button class="burger-btn" id="burgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
 
     </div>
@@ -48,6 +102,55 @@
             <ul class="menu__list">
                 <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">о компании</a></li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Услуги</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div>
+                                <h1 class="services-title">УСЛУГИ</h1>
+                            </div>
+
+                            <div class="services-grid">
+                                <div class="service-section">
+                                    <h2>ДОСТАВКА</h2>
+                                    <ul>
+                                        <li><a href="#">Доставка сборных грузов из Китая в Россию</a></li>
+                                        <li><a href="#">Морские грузоперевозки</a></li>
+                                        <li><a href="#">Авиадоставка грузов из Китая</a></li>
+                                        <li><a href="#">Быстрая доставка в Россию из Китая</a></li>
+                                        <li><a href="#">Контейнерные перевозки грузов из Китая в Россию</a></li>
+                                        <li><a href="#">мультимодальные перевозки грузов из Китая в Россию</a></li>
+                                        <li><a href="#">международные автоперевозки перевозки грузов из Китая в Россию</a></li>
+                                        <li><a href="#">ЖД перевозки в Россию из Китая</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="service-section">
+                                    <h2>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
+                                    <ul>
+                                        <li><a href="#">Таможенное оформление</a></li>
+                                        <li><a href="#">Страхование</a></li>
+                                        <li><a href="#">Перевод денег поставщику</a></li>
+                                        <li><a href="#">Складское хранение</a></li>
+                                        <li><a href="#">Сертификация товаров</a></li>
+                                        <li><a href="#">Упаковка груза</a></li>
+                                        <li><a href="#">Проверка поставщиков</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="service-section">
+                                    <h2>ТАМОЖЕННОЕ ОФОРМЛЕНИЕ</h2>
+                                    <ul>
+                                        <li><a href="#">таможенное оформление</a></li>
+                                        <li><a href="#">место доставки товаров</a></li>
+                                        <li><a href="#">решение фтс</a></li>
+                                        <li><a href="#">декларирование</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li class="menu__item"><a href="#" class="menu__link">полезная информация</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">тарифы</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
@@ -470,6 +573,49 @@
         <p>Согласие на обработку персональных данных <a href="/">Карта сайта</a></p>
     </div>
 </footer>
+
+
+<script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const closeBurgerBtn = document.getElementById('closeBurgerBtn');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const backdrop = document.getElementById('backdrop');
+    const menuSectionTitles = document.querySelectorAll('.menu-section-title.has-dropdown');
+
+    function openMenu() {
+        menuOverlay.classList.add('active');
+        backdrop.classList.add('active');
+    }
+
+    function closeMenu() {
+        burgerBtn.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        backdrop.classList.remove('active');
+    }
+
+    burgerBtn.addEventListener('click', () => {
+        burgerBtn.classList.toggle('active');
+        if (burgerBtn.classList.contains('active')) {
+            openMenu();
+        } else {
+            closeMenu();
+        }
+    });
+
+    closeBurgerBtn.addEventListener('click', closeMenu);
+
+    backdrop.addEventListener('click', closeMenu);
+
+    menuSectionTitles.forEach(title => {
+        title.addEventListener('click', () => {
+            const sectionId = title.getAttribute('data-section');
+            const dropdown = document.getElementById(sectionId);
+
+            title.classList.toggle('active');
+            dropdown.classList.toggle('active');
+        });
+    });
+</script>
 
 </body>
 </html>

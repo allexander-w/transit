@@ -7,8 +7,15 @@
     border-radius: 20px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: var(--bg);
     height: calc(100vh - 58px);
     min-height: 762px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero .background {
+        background-image: var(--bg-mobile);
+    }
 }
 
 .header .container {
@@ -7021,4 +7028,243 @@ span.line {
         font-size: 24px;
         line-height: 1.2;
     }
+}
+
+
+.mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #F6F8FC;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.4s ease;
+    padding: 32px 0;
+    width: 1400px;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+}
+
+
+.menu .menu__list li:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.mega-menu-content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 200px 0 42px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 40px;
+}
+
+.services-title {
+    color: var(--color-blue);
+    font-size: 42px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+/* Секции услуг */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr;
+}
+
+.service-section {
+    padding: 20px 30px;
+    border-radius: 8px;
+    border-right: 1px solid #CDDDE6;
+}
+
+.service-section h2 {
+    color: #17385E;
+    font-size: 16px;
+    margin-bottom: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.service-section ul {
+    list-style: none;
+}
+
+.service-section li {
+    margin-bottom: 16px;
+}
+
+.mega-menu .service-section ul li a {
+    color: #17385E !important;
+    font-size: 16px !important;
+    text-transform: none !important;
+    text-decoration: none;
+    font-weight: 400 !important;
+    line-height: 1.4;
+}
+
+.service-section a:hover {
+}
+
+/* Контент страницы */
+.page-content {
+    max-width: 1400px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+    color: #666;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .mega-menu {
+        width: 100%;
+    }
+}
+
+.burger-btn {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .burger-btn {
+        display: block;
+    }    
+}
+
+.burger-btn {
+    width: auto;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+}
+
+.burger-btn span {
+    display: block;
+    width: 39px;
+    height: 3px;
+    background-color: #0D47A1;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+.burger-btn.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-btn.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 85%;
+    height: 100vh;
+    background-color: #F6F8FC;
+    transition: left 0.3s ease;
+    z-index: 100000;
+    overflow-y: auto;
+}
+
+.menu-overlay .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 22px;
+}
+
+.menu-overlay.active {
+    left: 0;
+}
+
+.menu-content {
+    padding: 30px 20px;
+}
+
+.menu-section {
+    margin-bottom: 10px;
+}
+
+.menu-section-title {
+    color: var(--color-blue);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 6px;
+    max-height: 42px;
+}
+
+.menu-section-title.has-dropdown::after {
+    content: '+';
+    font-size: 24px;
+    font-weight: normal;
+    color: #999;
+    transition: transform 0.3s;
+}
+
+.menu-section-title.has-dropdown.active::after {
+    transform: rotate(45deg);
+}
+
+.menu-section-title.active {
+    background-color: #fff;
+}
+
+.menu-dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.menu-dropdown.active {
+    max-height: 800px;
+}
+
+.menu-item {
+    padding: 18px 30px 5px;
+    color: #17385E;
+    font-size: 15px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.menu-item:hover {
+    color: #0D47A1;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100000;
+    height: 100vh;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.backdrop.active {
+    opacity: 1;
+    visibility: visible;
 }

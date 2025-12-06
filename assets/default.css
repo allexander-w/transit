@@ -1345,7 +1345,7 @@ span.line {
 
 .partner .container img {
     position: absolute;
-    top: -150px;
+    top: -220px;
     left: -200px;
     z-index: 2;
 }
@@ -1400,7 +1400,7 @@ span.line {
 
 @media screen and (max-width: 1280px) {
     .partner .container > img {
-        top: -200px;
+        top: -240px;
         left: -500px;
     }
 }
@@ -1512,7 +1512,7 @@ span.line {
 .reviews__slider .reviews__slide {
     background-color: var(--color-blue);
     padding: 35px 52px;
-    min-height: 509px;
+    min-height: 609px;
     position: relative;
 }
 
@@ -1612,6 +1612,12 @@ span.line {
 
     .reviews__slider .reviews__slide {
         padding: 35px 22px;
+    }
+
+    .reviews__slider .reviews__slide .reviews__slide-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
     }
 
     .reviews__slider .reviews__slide .reviews__slide-header .reviews__author .reviews__author-name p {
@@ -2006,7 +2012,7 @@ span.line {
 
 @media screen and (max-width: 768px) {
     .trust {
-        margin-bottom: 58px;
+        margin-bottom: 180px;
     }
 }
 
@@ -2622,6 +2628,10 @@ span.line {
 .additional-blocks__item:hover p, .additional-blocks__item:hover svg path {
     fill: #fff;
     color: #fff;
+}
+
+.additional-blocks__item:hover .decor, .additional-blocks__item:hover img {
+    filter: brightness(0) invert(1);
 }
 
 .additional-blocks__item p {
@@ -4488,9 +4498,17 @@ span.line {
     border-bottom: 1px solid var(--color-blue);
 }
 
+@media screen and (max-width: 940px) {
+    .customs-procedures-section .column-title {
+        min-height: 80px;
+    }
+}
+
 .customs-procedures-section .procedure-item {
     padding-bottom: 20px;
     margin-bottom: 16px;
+
+    min-height: 100px;
 }
 
 .procedure-item:not(:last-child) {
@@ -4528,12 +4546,11 @@ span.line {
     margin-bottom: 86px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 876px) {
     .customs-procedures-section {
         grid-template-columns: 1fr;
         gap: 50px;
     }
-
     .customs-procedures-section .divider {
         display: none;
     }
